@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="shapes">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/shapes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
