@@ -14,4 +14,21 @@ public class Kreis {
         this.radius = radius;
         this.farbe = farbe;
     }
+
+    public void verschieben(int xRichtung, int yRichtung) {
+        positionX += xRichtung;
+        positionY *= yRichtung;
+    }
+
+    public void vergroessern(int zusaetzlicherRadius) {
+        radius += zusaetzlicherRadius;
+    }
+
+    public double flaecheninhaltBerechnen() {
+        return Math.PI * (radius * radius);
+    }
+
+    public double umfangBerechnen() {
+        return 2 * Math.PI * radius;
+    }
 }

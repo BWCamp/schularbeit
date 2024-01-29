@@ -16,4 +16,32 @@ public class Rechteck {
         this.breite = breite;
         this.hoehe = hoehe;
     }
+
+    public void verschieben(int xRichtung, int yRichtung) {
+        positionX += xRichtung;
+        positionY += yRichtung;
+    }
+
+    public double flaecheninhaltBerechnen() {
+        return breite * hoehe;
+    }
+
+    public void vergroessern(int faktor) {
+        hoehe *= faktor;
+        breite *= faktor;
+    }
+
+    public double umfangBerechnen() {
+        return (breite * 2) + (hoehe * 2);
+    }
+
+    public boolean istQuadrat() {
+        return breite == hoehe;
+    }
+
+    public void hoeheBreiteVertauschen() {
+        int tempHoehe = hoehe;
+        hoehe = breite;
+        breite = tempHoehe;
+    }
 }
