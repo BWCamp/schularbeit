@@ -17,7 +17,7 @@ public class Kreis {
 
     public void verschieben(int xRichtung, int yRichtung) {
         positionX += xRichtung;
-        positionY *= yRichtung;
+        positionY += yRichtung;
     }
 
     public void vergroessern(int zusaetzlicherRadius) {
