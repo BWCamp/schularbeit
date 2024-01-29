@@ -44,4 +44,12 @@ public class Rechteck {
         hoehe = breite;
         breite = tempHoehe;
     }
+
+    public void um90GradDrehen() {
+        double centerx = (positionX + .5 * breite);
+        double centery = (positionY + .5 * hoehe);
+        this.hoeheBreiteVertauschen();
+        this.positionX = (int) (centerx - .5 * breite);
+        this.positionY = (int) (centery - .5 * hoehe);
+    }
 }
